@@ -15,6 +15,11 @@ namespace OpenAI
 
 
         [SerializeField] private ChatLevel01 chatLevel01;
+
+        // Oskarin rec -napin käyttöönotto
+        [SerializeField] private Test test;
+
+
         [SerializeField] private Image progress;
 
         private readonly string fileName = "output.wav";
@@ -47,6 +52,8 @@ namespace OpenAI
         {
             if (isRecording)
             {
+                             
+
                 isRecording = false;
                 //Debug.Log("Stop recording...");
 
@@ -82,6 +89,8 @@ namespace OpenAI
             {
                 time += Time.deltaTime;
                 progress.fillAmount = time / duration;
+
+                test.Timer();
             }
 
             if (time >= duration)
@@ -89,6 +98,7 @@ namespace OpenAI
                 time = 0;
                 progress.fillAmount = 0;
                 StartRecording();
+
             }
         }
     }
