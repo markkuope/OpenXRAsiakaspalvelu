@@ -1,6 +1,0 @@
-https://05kari.github.io/ChatReader/
-
-
-Vinkki1: jos AI hallusinoi, aloita keskustelu uudestaan sanomalla " Olen asiakaspalvelijasi Arttu, kuinka voin auttaa?"
-
-Vinkki2: jos Vinkki1 ei auta, lopeta peli ja aloita alusta

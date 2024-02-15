@@ -16,10 +16,7 @@ namespace OpenAI
 
         [SerializeField] private ChatLevel01 chatLevel01;
 
-        // Oskarin rec -napin käyttöönotto
-        [SerializeField] private Test test;
-
-
+        
         [SerializeField] private Image progress;
 
         private readonly string fileName = "output.wav";
@@ -90,7 +87,6 @@ namespace OpenAI
                 time += Time.deltaTime;
                 progress.fillAmount = time / duration;
 
-                test.Timer();
             }
 
             if (time >= duration)

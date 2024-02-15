@@ -38,7 +38,7 @@ namespace OpenAI
             PlayerPrefs.SetInt("user-mic-device-index", index);
         }
 
-        private async void StartRecording()
+        public async void StartRecording()
         {
             if (isRecording)
             {
